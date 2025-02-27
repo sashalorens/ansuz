@@ -2,7 +2,8 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-function App() {
+// eslint-disable-next-line react/prop-types
+function App({ children }) {
   return (
     <>
       <div className='bg-blue-500 text-white p-4'>
@@ -13,6 +14,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      {children}
     </>
   );
 }
